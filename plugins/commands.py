@@ -23,8 +23,8 @@ logger = logging.getLogger(__name__)
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         btn = [[
-            InlineKeyboardButton('⚡️ Updates Channel ⚡️', url=UPDATES_LINK),
-            InlineKeyboardButton('🔥 Support Group 🔥', url=SUPPORT_LINK)
+            InlineKeyboardButton('⚡️ Updates Channel ⚡️', url=https://t.me/KannadaFlix6),
+            InlineKeyboardButton('🔥 Support Group 🔥', url=https://t.me/KannadaFlix6)
         ]]
         s = await message.reply_sticker(sticker=random.choice(STICKERS), reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(30)
@@ -117,8 +117,8 @@ async def start(client, message):
             )
             
             btn = [[
-                InlineKeyboardButton('⚡️ Updates Channel ⚡️', url=UPDATES_LINK),
-                InlineKeyboardButton('🔥 Support Group 🔥', url=SUPPORT_LINK)
+                InlineKeyboardButton('⚡️ Updates Channel ⚡️', url=https://t.me/KannadaFlix6),
+                InlineKeyboardButton('🔥 Support Group 🔥', url=https://t.me/KannadaFlix6)
             ]]
             await client.send_cached_media(
                 chat_id=message.from_user.id,
@@ -143,8 +143,8 @@ async def start(client, message):
     )
     
     btn = [[
-        InlineKeyboardButton('⚡️ Updates Channel ⚡️', url=UPDATES_LINK),
-        InlineKeyboardButton('🔥 Support Group 🔥', url=SUPPORT_LINK)
+        InlineKeyboardButton('⚡️ Updates Channel ⚡️', url=https://t.me/KannadaFlix6),
+        InlineKeyboardButton('🔥 Support Group 🔥', url=https://t.me/KannadaFlix6)
     ]]
     await client.send_cached_media(
         chat_id=message.from_user.id,
