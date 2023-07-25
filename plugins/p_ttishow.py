@@ -15,7 +15,7 @@ async def new_grp_msg(bot, message):
     if temp.ME in r_j_check:
         if message.chat.id in temp.BANNED_CHATS:
             buttons = [[
-                InlineKeyboardButton('Support Group', url=SUPPORT_LINK)
+                InlineKeyboardButton('Support Group', url='https://t.me/KannadaFlix6')
             ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             k = await message.reply(
@@ -30,7 +30,7 @@ async def new_grp_msg(bot, message):
             await bot.leave_chat(message.chat.id)
             return
         buttons = [[
-            InlineKeyboardButton('Support Group', url=SUPPORT_LINK)
+            InlineKeyboardButton('Support Group', url='https://t.me/KannadaFlix6')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         r_j = message.from_user.mention if message.from_user else "Dear"
@@ -60,7 +60,7 @@ async def leave_a_chat(bot, message):
         chat = chat
     try:
         buttons = [[
-            InlineKeyboardButton('Support Group', url=SUPPORT_LINK)
+            InlineKeyboardButton('Support Group', url='https://t.me/KannadaFlix6')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
@@ -99,7 +99,7 @@ async def disable_chat(bot, message):
     await message.reply('Chat successfully disabled')
     try:
         buttons = [[
-            InlineKeyboardButton('Support Group', url=SUPPORT_LINK)
+            InlineKeyboardButton('Support Group', url='https://t.me/KannadaFlix6')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
